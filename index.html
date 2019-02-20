@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+	<head>
+<style>
+#step1 {display: block;}
+#step2 {display: none;}
+</style>
+	</head>
+
+	<body>
+		<div id="step1">Step 1</div>
+		<div id="step2">Step 2</div>
+
+		<button id="btn">Continue</button>
+	</body>
+
+	<script type="text/javascript">
+		var btn = document.getElementById('btn');
+		var step1 = document.getElementById('step1');
+		var step2 = document.getElementById('step2');
+
+		btn.onclick = function() {
+			step1.style.display = 'none';		
+			step2.style.display = 'block';		
+		};
+	</script>
+</html>
